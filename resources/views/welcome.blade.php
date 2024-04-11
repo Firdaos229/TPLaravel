@@ -11,33 +11,18 @@
 
     <div class="row">
 
-        <div class="card col" style="width:30%; margin-left:3%;">
-           <img src="{{asset('images/marche.jpg')}}" class="card-img-top" alt="aidjedo">
-            <div class="card-body">
-                <h5 class="card-title">Aidjedo</h5>
-                <p class="card-text">Capacité : <span>1000 places</span></p>
-            </div>
+        <div class=" col" >
+                <h2 class="card-title" style="text-align: center;">
+                    Bienvenu sur le programme de construction des marchés du gouvernement Béninois!
+                </h2>
+             <br><br><br>
+                <div class="col" style="display:flex; justify-content: center;">
+                    <a href="/enregistrer" style="margin-right:2%;" class="btn btn-info" title="je suis admin">Ajouter un marché</a>
+                    <a href="/liste" class="btn btn-danger">Consulter les marchés construits</a>
+                </div>
+
         </div>
 
-        <div class="card col" style="width:30%; margin-left:3%;">
-           <img src="{{asset('images/marche.jpg')}}" class="card-img-top" alt="aidjedo">
-            <div class="card-body">
-                <h5 class="card-title">Aidjedo</h5>
-                <p class="card-text">Capacité : <span>1000 places</span></p>
-            </div>
-        </div>
-
-        <div class="card col" style="width:30%; margin-left:3%;">
-           <img src="{{asset('images/marche.jpg')}}" class="card-img-top" alt="aidjedo">
-            <div class="card-body">
-                <h5 class="card-title">Aidjedo</h5>
-                <p class="card-text">Capacité : <span>1000 places</span></p>
-            </div>
-        </div>
-
-        
-    </div>  
-    
 </div>
 @endsection
 

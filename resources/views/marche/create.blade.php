@@ -1,5 +1,5 @@
 @extends('main')
- 
+
 @section('title', 'Formulaire Ajout de marché')
 
 @section('content')
@@ -9,12 +9,11 @@
                                <div class="alert alert-success">
                                     {{ session('status') }}
                                </div>
-                            @endif     
+                            @endif
 
                 <form  id="contact-form" method="post" action="{{route('marche.store')}}" role="form" enctype="multipart/form-data">
-                             @csrf     
+                             @csrf
                     <div class="row">
-
                         <div class="col-md-6">
                             <label for="firstname">Nom du marché <span class="blue">*</span></label>
                             <input type="text" id="firstname" name="nomMarche" class="form-control" placeholder="Nom du marché" >
@@ -31,7 +30,7 @@
                                 @foreach ($villes as $ville)
                                   <option value="{{$ville->idVille}}"> {{$ville->nomVille}} </option>
                                 @endforeach
-        
+
                              </select>
                         </div>
                         <div class="col-md-6">

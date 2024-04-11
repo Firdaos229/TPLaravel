@@ -12,4 +12,15 @@ class Ville extends Model
     protected $fillable = [
         'nomVille',
     ];
+    /**
+     * Get all of the comments for the Ville
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function marches(): HasMany
+    {
+        return $this->hasMany(Marche::class, 'ville_id', 'idVille');
+    }
+
+    protected $primaryKey= 'idVille';
 }

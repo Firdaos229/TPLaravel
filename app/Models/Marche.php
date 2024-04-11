@@ -17,4 +17,9 @@ class Marche extends Model
         'telephone',
         'image',
     ];
+    protected $primaryKey= 'idMarche';
+
+    public function ville(){
+        return $this->belongsTo (Ville::class, 'ville_id', 'idVille');
+    }
 }

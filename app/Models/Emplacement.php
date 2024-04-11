@@ -12,4 +12,6 @@ class Emplacement extends Model
     protected $fillable = [
         'numero',
     ];
+
+    protected $primaryKey= 'idEmplacement';
 }

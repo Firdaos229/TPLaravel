@@ -12,4 +12,5 @@ class TypeEmplacement extends Model
     protected $fillable = [
         'libelle',
     ];
+    protected $primaryKey= 'idType';
 }
